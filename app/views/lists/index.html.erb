@@ -1,7 +1,21 @@
-<h2>States</h2>
+<h1>States</h1>
 
-<p>Put your code here...</p>
+<% states=["Wyoming", "Colorado", "Utah", "Arizona", "New Mexico"] %>
 
-<h2>Cities</h2>
+<ul>
+  <% states.each do|state| %>
+  <li><h2> <%= state %> </h2>
+</li>
+  <% end %>
+</ul>
 
-<p>Put your code here...</p>
+
+<h1>Cities</h1>
+<% cities=["Cheyenne", "Boulder", "Salt Lake City", "Tucson", "Taos"] %>
+
+<ul>
+  <% cities.each do|city| %>
+  <li><h2> <%= city %> </h2>
+</li>
+  <% end %>
+</ul>
